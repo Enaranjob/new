@@ -1,0 +1,40 @@
+{% extends 'formempleado.html' %}
+{% load static %}
+
+{% block controls %}
+    <form class="row g-3 needs-validation" novalidate>
+      <div class="col-md-4">
+          <label for="solicitud"><h6>Acreedor ?</h6></label>
+          <input id="solicitud"type="text" placeholder="Kelly Sanchez" name="solicitud" class="form-control" disabled>
+        </div>
+        <div class="col-md-4">
+          <label for="motivo"><h6>Motivo</h6></label>
+          <input id="motivo"type="text" placeholder="Personal" name="motivo" class="form-control" disabled>
+        </div>
+      <div class="col-md-4">
+        <label for="fecha" class = "form-label"><h6>Fecha de Solicitud</h6></label>
+        <input id="fecha"type="text" placeholder="04/08/2022" name="fecha" class="form-control" disabled>
+      </div>
+      
+      <div class="col-md-4">
+        <label for="monto" class = "form-label"><h6>Monto</h6></label>
+        <input id="monto" name="monto" type="number" max="30000" min="10000" placeholder="10000"  class="form-control" required>
+      </div>
+      <div class="col-md-4">
+        <label for="cuota" class = "form-label"><h6>Cuotas</h6></label>
+        <input id="cuota" name="cuotas" type="number" max="72" min="3" placeholder="10"  class="form-control" required >
+      </div>
+      <div class="col-md-4">
+        <label for="cuota" class = "form-label"><h6>Interes</h6></label>
+        <input class="form-control" type="text" placeholder="10%" aria-label="Disabled input example" disabled>
+      </div>
+    </form>
+    <div class="col-md-4">
+      <h6>Estado</h6>
+    <div class="form-check mt-2 ">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" required>
+      <label class="form-check-label" for="flexRadioDefault4">Activo</label>
+    </div>
+  </div>
+
+{% endblock %}

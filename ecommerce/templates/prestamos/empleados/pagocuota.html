@@ -1,0 +1,32 @@
+{% extends 'formempleado.html' %}
+{% load static %}
+
+{% block controls %}
+
+    <form class="row g-3 needs-validation" novalidate>
+      <div class="col-md-6">
+          <label for="solicitud"><h6>Deudor ?</h6></label>
+            <select name="solicitud" id="solicitud" class="form-select" required>
+              <option selected disabled value="">Adeudado....</option>
+              <option>Dayana Apiazu</option>
+              <option>Brigner Carriel</option>
+              <option>Kelly Sánchez</option>
+              <option>Stuard Naranjo</option>
+            </select>
+        </div>
+      <div class="col-md-6">
+        <label for="monto" class = "form-label"><h6>Valor de Cuota</h6></label>
+        <input class="form-control" type="text" placeholder="800" aria-label="Disabled input example" disabled>
+      </div>
+      <div class="col-md-6">
+        <label for="cuota" class = "form-label"><h6>Cuota</h6></label>
+        <input class="form-control" type="text" placeholder="2/12" aria-label="Disabled input example" disabled>
+      </div>
+      <div class="col-md-6">
+        <label for="cuota" class = "form-label"><h6>Saldo Insoluto</h6></label>
+        <input class="form-control" type="text" placeholder="10,600" aria-label="Disabled input example" disabled>
+      </div>
+    </form>
+
+{% endblock %}
+    

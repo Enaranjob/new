@@ -1,0 +1,50 @@
+{% extends 'formempleado.html' %}
+{% load static %}
+
+{% block controls %}
+    <form class="row g-3 needs-validation" novalidate>
+      <div class="col-md-4">
+          <label for="solicitud"><h6>Acreedor ?</h6></label>
+            <select name="solicitud" id="solicitud" class="form-select" required>
+              <option selected disabled value="">Solicitante....</option>
+              <option>Dayana Apiazu</option>
+              <option>Brigner Carriel</option>
+              <option>Kelly Sánchez</option>
+              <option>Stuard Naranjo</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+          <label for="solicitud"><h6>Motivo</h6></label>
+            <select name="solicitud" id="solicitud" class="form-select" required>
+              <option selected disabled value="">Motivo del Prestamo....</option>
+              <option>Personal</option>
+              <option>Salud</option>
+            </select>
+        </div>
+      <div class="col-md-4">
+        <label for="fecha" class = "form-label"><h6>Fecha de Solicitud</h6></label>
+        <input id="fecha"type="date" name="fecha" class="form-control" required>
+      </div>
+      
+      <div class="col-md-4">
+        <label for="monto" class = "form-label"><h6>Monto</h6></label>
+        <input id="monto" name="monto" type="number" max="5000" min="100"  class="form-control" required>
+      </div>
+      <div class="col-md-4">
+        <label for="cuota" class = "form-label"><h6>Cuotas</h6></label>
+        <input id="cuota" name="cuotas" type="number" max="72" min="3"  class="form-control" required>
+      </div>
+      <div class="col-md-4">
+        <label for="cuota" class = "form-label"><h6>Interes</h6></label>
+        <input class="form-control" type="text" placeholder="10%" aria-label="Disabled input example" disabled>
+      </div>
+    </form>
+    <div class="col-md-4">
+      <h6>Estado</h6>
+    <div class="form-check mt-2 ">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" required>
+      <label class="form-check-label" for="flexRadioDefault4">Activo</label>
+    </div>
+  </div>
+
+{% endblock %}

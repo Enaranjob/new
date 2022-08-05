@@ -1,0 +1,111 @@
+{% extends 'consulempleado.html' %}
+{% load static %}
+
+
+{% block columns %}
+
+<div class="container bg-light border">
+    <div class="row">
+        <div class="col-md-4">
+            <label for="solicitud"><h6>Consultor?</h6></label>
+        <select name="solicitud" id="solicitud" class="form-select" required>
+            <option selected disabled value="">Su nombre....</option>
+            <option>Dayana Apiazu</option>
+            <option>Brigner Carriel</option>
+            <option>Kelly Sánchez</option>
+            <option>Stuard Naranjo</option>
+        </select>
+        </div>
+        <div class="col-md-4">
+            <br>
+            <a class="btn btn-success btn-flat" href="{% url 'infoprestamos' %}">Consultar</a>
+        </div>
+    <br>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col text-center">
+            <h6>Fecha del prestamo:</h6>
+        </div>
+        <div class="col text-center">
+            <p>.. /.. / ....</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <h6>Motivo:</h6>
+        </div>
+        <div class="col text-center">
+            <p>......</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <h6>Plazo(Meses):</h6>
+        </div>
+        <div class="col text-center">
+            <p>......</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <h6>Cuotas:</h6>
+        </div>
+        <div class="col text-center">
+            <p>......</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <h6>Taza de interes:</h6>
+        </div>
+        <div class="col text-center">
+            <p>10%</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <h6>Valor cuota mensual:</h6>
+        </div>
+        <div class="col text-center">
+            <p>$ ......</p>   
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <h6>Valor a recibir:</h6>
+        </div>
+        <div class="col text-center">
+            <p>$ ......</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <h6>Valor con intereses:</h6>
+        </div>
+        <div class="col text-center">
+            <p>$ ......</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <h6>Valor Insoluto:</h6>
+        </div>
+        <div class="col text-center">
+            <p>$ ......</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <h6>*En tu cuota esta incluido el financiamiento de:</h6>
+            <h6>Seguro famila</h6>
+            <p>✔ Cubre tu deuda en caso de fallecimiento y te protege en caso de accidentes</p>
+            <h6>Seguro de garantía de crédito</h6>
+            <p>✔ Es una opción,si no tienes garantía real</p>
+        </div>
+    </div>
+    
+</div>
+
+{% endblock %}
+    

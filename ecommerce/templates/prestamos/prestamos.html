@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+      <div class="container-fluid">
+       <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-2">
+           <div class="col">
+            <div class="card" style="height:15rem" >
+              <img src="{% static 'img/cards/empleados.png' %}" class="img-fluid  mx-auto d-block" style="width:35%">
+               <div class="card-body text-center">
+                   <a class="text-decoration-none" href="{% url 'lisempleados' %}">
+                       <h5 class="card-title text-success">Empleados</h5>
+                   </a>
+                <p class="card-text">Lista de empleados de la Empresa</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="height:15rem" >
+              <img src="{% static 'img/cards/lista-prestamos.png' %}" class="img-fluid  mx-auto d-block" style="width:35%">
+               <div class="card-body text-center">
+                   <a class="text-decoration-none" href="{% url 'lisprestamos' %}">
+                     <h5 class="card-title text-success">Prestamos</h5>
+                   </a>
+                <p class="card-text">Listado de los prestamos activos</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="height:15rem"  >
+              <img src="{% static 'img/cards/detalle-prestamos.png' %}" class="img-fluid  mx-auto d-block" style="width:35%">
+               <div class="card-body text-center">
+                <a class="text-decoration-none" href="{% url 'detalleprestamo' %}">
+                  <h5 class="card-title text-success">Detalles del Prestamo </h5>
+                </a>
+                <p class="card-text">Detalla el la informacion del prestamo</p>
+              </div>
+            </div>
+          </div>
+       </div>
+      </div>
+{% endblock %}
